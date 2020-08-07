@@ -11,11 +11,11 @@ same letter cell may not be used more than once.
 
 For example, given the following board:
 
-[
-  ['A','B','C','E'],
-  ['S','F','C','S'],
-  ['A','D','E','E']
-]
+    [
+      ['A','B','C','E'],
+      ['S','F','C','S'],
+      ['A','D','E','E']
+    ]
 
 exists(board, "ABCCED") returns true,
 exists(board, "SEE") returns true,
@@ -46,9 +46,10 @@ a single recurse at any given depth into the call stack.
 There's a lot of subtasks in this problem,
 even if you don't read in a board from a file.
 
-* Look for the first letter of the word in the open board
-* Look for a letter in a board with some locations previously used
-* Find legal locations to check for a letter
+* Board representation, 2-D matrix or something else
+* Looking for the first letter of the word in the open board
+* Looking for a letter in a board with some locations previously used
+* Finding legal locations to check for a letter
 * Account for previously used locations in board
 * Decide when the program has found the desired word
 
