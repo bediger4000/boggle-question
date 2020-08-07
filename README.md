@@ -39,9 +39,12 @@ exists(board, "ABCB") returns false.
 
 This is a slightly generalized "boggle" game single word finder.
 
-This is also what the coding interview books will call a "bactracking" problem.
-Which means it's recursive, but the program probably has to make more than
-a single recurse at any given depth into the call stack.
+This is also what the coding interview books will call a "bactracking" problem,
+which means it's recursive, but the program probably has to make more than
+a single recurse at any given depth into the call stack:
+if a recursive search comes up empty,
+the program must choose another search to make based on the partial
+solution is has so far.
 
 There's a lot of subtasks in this problem,
 even if you don't read in a board from a file.
@@ -66,3 +69,28 @@ to encode which locations had already been used to compose the word
 by setting used locations to some non-letter value that would never
 match.
 It's 6 lines shorter, but maybe easier to understand.
+
+i don't believe the "easy" rating.
+It may be relatively straightforward, requiring only basic algorithm knowledge,
+but it's not easy given the number of sub-tasks,
+and the oddity of finding moves on the board that don't re-use a location.
+There's also the matter of choosing data structures.
+This seems like one problem where Rob Pike's advice about figuring out the
+correct data structure doesn't necessarily come true.
+You can use different data structures with almost identical algorithms.
+
+If the interviewer is interested in whether the candidate can rough in
+an algorithm, then fill in the fine details, this might be a good question.
+Approach to various sub-tasks can reveal a candidate's organizing skills,
+and maybe a little bit of data structure knowledge.
+There's really one one algorithm, but it is a backtracking algorithm,
+so maybe that's enough for the interviewers who put stock in "big-O"
+type knowledge.
+
+It's not a question for an entry-level candidate, and most junior-level
+programmers are going to get bogged down in the details.
+Even senior-level candidates are going to screw up finding "next letter"
+locations that fit on the board, and don't re-use a location.
+
+The interview using this should alot a great deal of time.
+The candidate should block out the solution before starting.
