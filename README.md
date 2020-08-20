@@ -39,7 +39,7 @@ exists(board, "ABCB") returns false.
 
 This is a slightly generalized "boggle" game single word finder.
 
-This is also what the coding interview books will call a "bactracking" problem,
+This is also what the coding interview books will call a "backtracking" problem,
 which means it's recursive, but the program probably has to make more than
 a single recurse at any given depth into the call stack:
 if a recursive search comes up empty,
