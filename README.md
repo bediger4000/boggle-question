@@ -92,5 +92,5 @@ programmers are going to get bogged down in the details.
 Even senior-level candidates are going to screw up finding "next letter"
 locations that fit on the board, and don't re-use a location.
 
-The interview using this should alot a great deal of time.
+The interview using this should allot a great deal of time.
 The candidate should block out the solution before starting.
