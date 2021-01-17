@@ -1,5 +1,6 @@
 # Daily Coding Problem: Problem #619 [Easy]  
 
+
 This problem was asked by Coursera.
 
 Given a 2D board of characters and a word, find if the word exists in the
@@ -20,6 +21,35 @@ For example, given the following board:
 exists(board, "ABCCED") returns true,
 exists(board, "SEE") returns true,
 exists(board, "ABCB") returns false.
+
+---
+
+### Related
+
+Daily Coding Problem: Problem #772 [Easy] seems related.
+
+This problem was asked by Facebook.
+
+Boggle is a game played on a 4 x 4 grid of letters.
+The goal is to find as many words as possible that can be formed by
+a sequence of adjacent letters in the grid,
+using each cell at most once.
+Given a game board and a dictionary of valid words,
+implement a Boggle solver.
+
+#### Related analysis
+
+The solution to the Facebook problem would use the Coursera
+boggle solver to attempt to find each word from the dictionary of valid words.
+Iterating over the dictionary of valid words is the obvious possibility,
+but there are also obvious optimizations,
+like finding all letters in the 4 x 4 grid of letters,
+then only iterating over words beginning with those 16 (or fewer) letters.
+
+Oddly, this extra work and optimizations seems to still keep
+the Facebook version in the "Easy" rating.
+
+---
 
 ## Build and run
 
