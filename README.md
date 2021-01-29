@@ -48,6 +48,34 @@ then only iterating over words beginning with those 16 (or fewer) letters.
 
 Oddly, this extra work and optimizations seems to still keep
 the Facebook version in the "Easy" rating.
+---
+
+### Related #2
+
+Daily Coding Problem: Problem #784 [Easy]
+
+This problem was asked by Microsoft.
+
+Given a 2D matrix of characters and a target word,
+write a function that returns whether the word can be found in the matrix by
+going left-to-right, or up-to-down.
+
+For example, given the following matrix:
+
+```
+[['F', 'A', 'C', 'I'],
+ ['O', 'B', 'Q', 'P'],
+ ['A', 'N', 'O', 'B'],
+ ['M', 'A', 'S', 'S']]
+```
+
+and the target word 'FOAM',
+you should return true,
+since it's the leftmost column.
+Similarly, given the target word 'MASS',
+you should return true,
+since it's the last row.
+
 
 ---
 
